@@ -18,8 +18,8 @@ Basic tools to read, format, filter and display hex values
 # Example
 
 ```python
-from src.hexlib.HexTwin import HexTwin
-from src.hexlib.Hexdump import Hexdump
+from hexlib.HexTwin import HexTwin
+from hexlib.Hexdump import Hexdump
 
 # 1.) HexTwin instance
 twin = HexTwin("path/to/file/test.txt")
