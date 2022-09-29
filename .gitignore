@@ -2,7 +2,7 @@ env/
 data
 dist/
 build/
-main.py
+test.py
 *-setup-*
 **/__pycache__
 **/*.egg-info/
