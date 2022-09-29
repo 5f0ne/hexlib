@@ -5,7 +5,7 @@ with open("README.md", "r") as r:
 
 setup(
     name="hexlib",
-    version="2.0.0",
+    version="2.0.1",
     author="5f0",
     url="https://github.com/5f0ne/hexlib",
     description="Basic tools to read, filter, format and display hex values",

@@ -31,7 +31,7 @@ class Hexdump():
         elif(self.filterZeroRows):
             self.__filterZero(rows)  
         else:
-            for row in self.rows:
+            for row in rows:
                 self.__printHexRow(row)
 
     def __filterNonAscii(self, rows):
