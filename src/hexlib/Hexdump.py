@@ -1,7 +1,5 @@
-from hexlib.HexTwin import HexTwin
-
 class Hexdump():
-    def __init__(self,) -> None:
+    def __init__(self) -> None:
         self.filterZeroRows = False
         self.filterNonAsciiRows = False
         self.zeroRowCounter = 0
@@ -13,7 +11,7 @@ class Hexdump():
         self.filterNonAsciiRows = filterNonAsciiRows
 
     def printTwin(self, outfile, twin):
-        self.fileHandle = open(outfile, "w")
+        self.fileHandle = open(outfile, "w+")
         self.__printHexHeader()
         self.__printHexRows(twin.rows)
         self.fileHandle.close()

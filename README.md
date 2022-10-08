@@ -35,6 +35,18 @@ dump.printTwin("path/to/result.txt", twin)
 dump.filter(filterNonAsciiRows=True) 
 dump.printTwin("path/to/result.txt", twin)
 
+# 2.) Create HexTwin from bytes (Filtering can also be used here)
+f = open("path/to/file", "rb")
+twinFromBytes = HexTwin.fromBytes(f.read(16))
+dumpFromBytes = Hexdump()
+
+dumpfromBytes.printTwin("path/to/bytes-result.txt", twinFromBytes)
+
+# 3.) Create a HexTwin from a offset reading x bytes (Filtering can also be used here)
+twinFromOffset = HexTwin.fromOffset("path/to/file.txt", offset=50, noOfBytes=10)
+dumpFromOffset = Hexdump()
+
+dumpFromOffset.printTwin("path/to/offset-result.txt", twinFromOffset)
 ```
 
 # License
